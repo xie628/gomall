@@ -1,6 +1,6 @@
 kitex:
   service: "demo_proto"
-  address: ":8888"
+  address: "172.21.128.1:8080"
   log_level: info
   log_file_name: "log/kitex.log"
   log_max_size: 10
@@ -9,7 +9,7 @@ kitex:
 
 registry:
   registry_address:
-    - 127.0.0.1:2379
+    - 127.0.0.1:8500
   username: ""
   password: ""
 
@@ -21,3 +21,12 @@ redis:
   username: ""
   password: ""
   db: 0
+
+cloud:
+  consul:
+    host: 127.0.0.1
+    port: 8500
+    discovery:
+      service_name: demo_proto
+      heartbeat:
+      enabled: true
