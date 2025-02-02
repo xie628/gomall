@@ -3,6 +3,7 @@ module github.com/xie628/gomall/demo/demo_proto
 go 1.23.4
 
 require (
+	github.com/bytedance/gopkg v0.1.1
 	github.com/cloudwego/fastpb v0.0.5
 	github.com/cloudwego/kitex v0.12.1
 	github.com/joho/godotenv v1.5.1
@@ -21,7 +22,6 @@ require (
 
 require (
 	github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da // indirect
-	github.com/bytedance/gopkg v0.1.1 // indirect
 	github.com/bytedance/sonic v1.12.5 // indirect
 	github.com/bytedance/sonic/loader v0.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect

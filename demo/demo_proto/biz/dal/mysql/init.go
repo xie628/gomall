@@ -35,14 +35,4 @@ func Init() {
 	type Version struct {
 		Version string
 	}
-
-	var v Version
-
-	err = DB.Raw("SELECT VERSION() as version").Scan(&v).Error
-
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Println(v)
 }

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package frontend.home;
+
+option go_package = "frontend/home";
+
+import "api.proto";
+
+message Empty {}
+
+service HomeService {
+   rpc Home(Empty) returns(Empty) {
+      option (api.get) = "/";
+   }
+}
+//cwgo server --type HTTP --idl ../../idl/frontend/home.proto --service frontend -module github.com/xie628/gomall/app/frontend -I ../../idl -I C:\protoc-29.3-win64\include
